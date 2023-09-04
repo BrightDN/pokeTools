@@ -1,0 +1,71 @@
+/* Countdown Code */
+.countDown{
+    text-align:center;
+}
+
+/* Bingo code */
+.bingoTableContainer{
+    margin:auto;
+    margin-top:20px;
+    padding-top:20px;
+    background:linear-gradient(
+        var(--color-red) 0%,
+        var(--color-red) 45%,
+        var(--color-black) 45%,
+        var(--color-black) 55%,
+        var(--color-white) 55%,
+        var(--color-white) 100%
+    );
+    
+    width:800px;
+}
+
+
+
+.bingoTile > img{
+        width:50%; 
+    }
+
+.bingo-grid-wrapper {
+    min-width: 500px;
+    max-width: 600px;
+    background-color: #FFF;
+    margin: auto;
+  }
+  
+  .bingoGrid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin:20px auto;
+  }
+  
+  .bingoTile{
+      border: black solid 1px;
+      aspect-ratio: 1/1;
+      display: grid;
+      justify-items: center;
+      align-content: center;
+  }
+
+/* ICONS */
+.navIcons{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+}
+
+.navIcons i{
+    margin:10px;
+    margin-bottom:20px;
+    cursor:pointer;
+}
+
+a{
+    text-decoration: none;
+    color:black;;
+}
+
+/* OVERLAY */
+.overlayCheck{
+    background-color:#a62c2b;
+}

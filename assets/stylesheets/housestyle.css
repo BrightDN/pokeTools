@@ -1,0 +1,21 @@
+/* VARIABLES */
+
+:root{
+    --color-red:#a62c2b;
+    --color-black:#2C2C2B;
+    --color-white:#FBFCF6;
+}
+
+/* PAGE-NORMALZING */
+
+*, ::before, ::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ---------------------- */
+
+body{
+    background-color:#2C2C2B;
+}

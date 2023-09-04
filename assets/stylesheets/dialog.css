@@ -1,0 +1,47 @@
+dialog{
+    margin:auto;
+    border-radius:20px;
+    width:250px;
+}
+.dialog-gameType input{
+    margin-left:10px;
+}
+
+dialog::backdrop{
+    backdrop-filter: blur(2px);
+}
+
+dialog *{
+    text-align: center;
+    margin:5px auto;
+}
+
+dialog h2{
+    font-size:1.25rem;
+    margin:15px auto 2px auto;
+}
+
+dialog button{
+    cursor:pointer;
+    padding:7px;
+    border-radius:20px;
+}
+
+dialog p{
+    cursor:pointer;
+    font-style: oblique;
+}
+
+.dialog-gameSelectors span{
+    margin-left:20px;
+    min-width: 5px;
+}
+
+dialog p:hover{
+    text-decoration: underline;
+}
+
+dialog i{
+    cursor:pointer;
+    margin-left:5px;
+}

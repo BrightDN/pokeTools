@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Second Version</title>
+
+    <link rel="stylesheet" href="./assets/stylesheets/dialog.css">
+    <link rel="stylesheet" href="./assets/stylesheets/bingoTable.css">
+    <link rel="stylesheet" href="./assets/stylesheets/housestyle.css">
+    <link rel="stylesheet" href="./assets/stylesheets/countdown.css">
+
+    <script defer src="./assets/scripts/pokelist.js"></script>
+    <script defer src="./assets/scripts/bingoBuilder.js"></script>
+    <script defer src="./assets/scripts/dialog.js"></script>
+    <script defer src="https://kit.fontawesome.com/8d43e0b763.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <dialog class="settings-dialog">
+        <form method="dialog">
+            <h2>Options</h2>
+                <!-- <div class="dialog-gameType">
+                    <input type="checkbox" name="timed"> Timed
+
+                    <h2>Mode</h2>
+                        <input type="radio" name="pvpOrSolo" value="solo" checked> solo
+                        <input type="radio" name="pvpOrSolo" value="pvpNormal"> pvp
+                        <input type="radio" name="pvpOrSolo" value="pvpLockout"> pvp lockout
+                </div> -->
+
+            <h2>Size</h2>
+                <label for="grid-size">Bingo size</label>
+                <select name="grid-size" id="grid-size">
+                    <option value="9">3x3</option>
+                    <option value="16">4x4</option>
+                    <option value="25">5x5</option>
+                    <option value="36">6x6</option>
+                    <option value="49">7x7</option>
+                </select>
+
+                <h2>Select game</h2>
+
+            <div class="dialog-gameSelectors">
+                <select name="games" class="bingo-games"></select>
+                <span></span>
+           
+            </div>   
+            <p class="selectorAdder-text">Add game</p>
+
+            <div class="closing-buttons">
+                <button class="bingo-settings-submit-button" type="submit">Use settings</button>
+                <button class="bingo-settings-cancel-button" type="button">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+
+
+
+    <section class="bingoTableContainer">
+        <!-- <div class="countDown">
+            <p>Placeholder CountDown</p>
+        </div> -->
+        <div class="bingo-grid-wrapper">
+            <div class="bingoGrid">
+            </div>
+        </div>
+
+        <div class="navIcons">
+            <a href="./index.html"><i class="fa-solid fa-house fa-2xl"></i></a>
+            <i class="fa-solid fa-rotate-right fa-2xl"></i>
+            <i class="fa-solid fa-gear fa-2xl"></i>
+        </div>
+    </section>
+</body>
+</html>
